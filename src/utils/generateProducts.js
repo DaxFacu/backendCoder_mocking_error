@@ -3,26 +3,13 @@ import { faker } from "@faker-js/faker";
 faker.locale = "es";
 
 export const generateProducts = () => {
-  //   const numOfProducts = parseInt(
-  //     faker.random.numeric(1, { bannedDigits: ["0"] })
-  //   );
   const products = [];
-
-  //   for (let i = 0; i < numOfProducts; i++) {
-  //     products.push(generateProduct());
-  //   }
 
   for (let i = 0; i < 100; i++) {
     products.push(generateProduct());
   }
 
   return {
-    // name: faker.name.firstName(),
-    // last_name: faker.name.lastName(),
-    // birthgDate: faker.date.birthdate(),
-    // email: faker.internet.email(),
-    // phone: faker.phone.number(),
-    // sex: faker.name.sex(),
     products,
   };
 };
